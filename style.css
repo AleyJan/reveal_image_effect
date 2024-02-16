@@ -1,0 +1,46 @@
+body{
+    background-color: #060e1f;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    height: 80vh;
+    top: 10%;
+    margin-bottom: 20px;
+    background: url("Naruto.jpg") no-repeat; 
+    background-size: 50%; 
+    
+    background-position: 50%;
+    font: 100 6rem sans-serif;
+    transition: .5s ease-in-out;
+
+    line-height: .2rem ;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #060e1f00 ;
+
+    animation: reveal 5s ease-in-out; 
+}
+ 
+@keyframes reveal {
+    0%{
+        background-size: 60%;
+        line-height: 5rem ;
+        font-size: .2rem;
+    }
+    50%{
+        background-size: 100%;
+        line-height: 2rem ;
+        font-size: 1rem;
+    }
+}
+
+p:hover{
+    line-height: .7rem;
+    cursor: pointer;
+    background-size: 70%;
+}
